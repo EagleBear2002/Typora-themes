@@ -7,7 +7,8 @@
     --control-text-color: #777;
     /* --font-sans-serif: 'PingFangSC-Regular', 'Microsoft YaHei', , 'Source Sans Pro', sans-serif !important; */
     --font-sans-serif: 'Source Han SerifCN', 'Microsoft YaHei', sans-serif !important;
-    --font-monospace: 'Consolas', monospace, 'Courier New', 'Roboto Mono', 'Source Sans Pro', 'Microsoft YaHei' !important;
+    --font-monospace: 'Consolas';
+     /* monospace, 'Courier New', 'Roboto Mono', 'Source Sans Pro', 'Microsoft YaHei' !important; */
     /* 主题色 */
     --main-1: #fff3f0;
     --main-2: #ffd4cc;
@@ -38,7 +39,7 @@ body {
 
 /* #write 为写入区域 */
 #write {
-    max-width: 860px;
+    max-width: 850px;
     padding: 30px;
     margin: 0 auto;
     padding-bottom: 100px;
@@ -286,9 +287,14 @@ table {
     margin: 0.4em 0;
 }
 
+ul,
+ol {
+    padding-left: 20px;
+}
+
 li>ol,
 li>ul {
-    margin: 0.8em 0;
+    margin: 0 0;
 }
 
 hr {
@@ -398,14 +404,13 @@ table tr td:last-child {
     word-wrap: normal;
 }
 
-#write .CodeMirror-wrap .CodeMirror-code pre {
+/* #write .CodeMirror-wrap .CodeMirror-code pre {
     padding-left: 12px;
 }
 
-/* 代码框中光标颜色 */
 #write .CodeMirror-cursors .CodeMirror-cursor {
     border-left: 2px solid var(--main-4);
-}
+} */
 
 /* 行内代码 */
 #write code,
@@ -413,8 +418,8 @@ tt {
     padding: 2px 4px 0px 4px;
     border-radius: 2px;
     font-family: var(--font-monospace);
-    /* color: #FF0000; */
-    /* background-color: #FAEAEB; */
+    color: #FF0000;
+    background-color: #FAEAEB;
 }
 
 tt {
@@ -543,7 +548,7 @@ tt {
 .md-toc-h3:before {
     /* color: black; */
     counter-increment: h3toc;
-    content: counter(h2toc) ". "counter(h3toc) " "
+    content: counter(h2toc) "."counter(h3toc) " "
 }
 
 .md-toc-h3 .md-toc-inner {
@@ -553,7 +558,7 @@ tt {
 .md-toc-h4:before {
     /* color: black; */
     counter-increment: h4toc;
-    content: counter(h2toc) ". "counter(h3toc) ". "counter(h4toc) " "
+    content: counter(h2toc) "." counter(h3toc) "." counter(h4toc) " "
 }
 
 .md-toc-h4 .md-toc-inner {
@@ -563,7 +568,7 @@ tt {
 .md-toc-h5:before {
     /* color: black; */
     counter-increment: h5toc;
-    content: counter(h2toc) ". "counter(h3toc) ". "counter(h4toc) ". "counter(h5toc) " "
+    content: counter(h2toc) "." counter(h3toc) "." counter(h4toc) "." counter(h5toc) " "
 }
 
 .md-toc-h5 .md-toc-inner {
@@ -573,7 +578,7 @@ tt {
 .md-toc-h6:before {
     /* color: black; */
     counter-increment: h6toc;
-    /* content: counter(h2toc) ". "counter(h3toc) ". "counter(h4toc) ". "counter(h5toc) ". "counter(h6toc) " " */
+    /* content: counter(h2toc) "." counter(h3toc) "." counter(h4toc) "." counter(h5toc) "." counter(h6toc)  " "*/
 }
 
 .md-toc-h6 .md-toc-inner {
@@ -699,6 +704,9 @@ footer {
     background: #999;
 }
 
+#write {
+    background-image: url(C:\Users\37756\Pictures\fivestars-fixed.jpg);
+}
 
 /* 打印成PDF */
 @media print {
@@ -707,7 +715,8 @@ footer {
     } */
 
     html {
-        font-size: 15px !important;
+        font-size: 12px !important;
+        /* font-family: "宋体-简", "华文宋体", "Noto Serif CJK SC"; */
     }
 
     body {
@@ -717,7 +726,8 @@ footer {
 
     table,
     pre {
-        page-break-inside: avoid;
+        /* page-break-inside: avoid; */
+        page-break-before: avoid;
     }
 
     pre {

@@ -518,3 +518,11 @@ a {
 .dropdown-menu .divider {
 	border-color: #e5e5e5;
 }
+
+li {
+	margin: 0.5rem 0;
+}
+
+li > *:last-child {
+	margin-bottom: 0;
+}
