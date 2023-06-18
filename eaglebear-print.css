@@ -6,7 +6,9 @@
     --side-bar-bg-color: #fff;
     --control-text-color: #777;
     /* --font-sans-serif: 'PingFangSC-Regular', 'Microsoft YaHei', , 'Source Sans Pro', sans-serif !important; */
-    --font-sans-serif: /*'Times New Roman',*/ 'Source Han SerifCN', 'Microsoft YaHei', sans-serif !important;
+    --font-sans-serif: 'Times New Roman', 'Source Han SerifCN', '宋体', sans-serif !important;
+    --font-h1: '黑体';
+    --font-blockquote: '仿宋';
     --font-monospace: 'Consolas';
      /* monospace, 'Courier New', 'Roboto Mono', 'Source Sans Pro', 'Microsoft YaHei' !important; */
     /* 主题色 */
@@ -110,6 +112,7 @@ em {
 }
 
 h1 {
+    font-family: var(--font-h1);
     counter-reset: h2;
 }
 
@@ -136,7 +139,7 @@ h5 {
 
 #write h2:before {
     counter-increment: h2;
-    content: counter(h2) ". "
+    content: counter(h2) ". ";
 }
 
 #write h3:before,
@@ -324,6 +327,7 @@ hr {
 }
 
 blockquote {
+    font-family: var(--font-blockquote);
     border-left: 4px solid rgb(239, 112, 96);
     padding: 0px 15px;
     color: #3f3f3f;
@@ -512,7 +516,7 @@ tt {
 .md-toc-h4 {
     margin-left: 4rem;
     font-size: .85rem;
-    counter-reset: h5toc;
+    counter-reset: h5toc
 }
 
 .md-toc-h5 {
@@ -578,7 +582,7 @@ tt {
 .md-toc-h6:before {
     /* color: black; */
     counter-increment: h6toc;
-    /* content: counter(h2toc) "." counter(h3toc) "." counter(h4toc) "." counter(h5toc) "." counter(h6toc)  " "; */
+    /* content: counter(h2toc) "." counter(h3toc) "." counter(h4toc) "." counter(h5toc) "." counter(h6toc)  " ";*/
 }
 
 .md-toc-h6 .md-toc-inner {
@@ -667,7 +671,7 @@ header,
 .megamenu-content,
 footer {
     /* font-family: "Segoe UI", "Arial", sans-serif; */
-    font-family: var(--font-sans-serif)
+    font-family: var(--font-sans-serif);
 }
 
 .file-node-content:hover .file-node-icon,
