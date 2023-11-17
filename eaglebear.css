@@ -7,8 +7,7 @@
     --control-text-color: #777;
     /* --font-sans-serif: 'PingFangSC-Regular', 'Microsoft YaHei', , 'Source Sans Pro', sans-serif !important; */
     --font-sans-serif: /*'Times New Roman',*/ 'Source Han SerifCN', 'Microsoft YaHei', sans-serif !important;
-    --font-monospace: 'Consolas';
-     /* monospace, 'Courier New', 'Roboto Mono', 'Source Sans Pro', 'Microsoft YaHei' !important; */
+    --font-monospace: 'Consolas', monospace, 'Courier New', 'Roboto Mono', 'Source Sans Pro', 'Microsoft YaHei' !important;
     /* 主题色 */
     --main-1: #fff3f0;
     --main-2: #ffd4cc;
