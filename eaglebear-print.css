@@ -6,9 +6,10 @@
     --side-bar-bg-color: #fff;
     --control-text-color: #777;
     /* --font-sans-serif: 'PingFangSC-Regular', 'Microsoft YaHei', , 'Source Sans Pro', sans-serif !important; */
-    --font-sans-serif: 'Times New Roman', 'Source Han SerifCN', '宋体', sans-serif !important;
-    --font-h1: '黑体';
-    --font-blockquote: '仿宋';
+    --font-sans-serif: 'Times New Roman', 'Source Han SerifCN', '仿宋', sans-serif !important;
+    --font-h1: '宋体';
+    --font-h2: '宋体';
+    --font-blockquote: '楷体';
     --font-monospace: 'Consolas';
      /* monospace, 'Courier New', 'Roboto Mono', 'Source Sans Pro', 'Microsoft YaHei' !important; */
     /* 主题色 */
@@ -25,7 +26,7 @@
 }
 
 html {
-    font-size: 17px;
+    font-size: 16px;
 }
 
 body {
@@ -312,7 +313,7 @@ hr {
 
 /* 列表环境 */
 #write ::marker {
-    color: #f50057;
+    /* color: #f50057; */
     font-weight: bold;
 }
 
@@ -720,7 +721,7 @@ footer {
     } */
 
     html {
-        font-size: 12px !important;
+        font-size: 16px !important;
         font-family: 'Times New Roman', "宋体-简", "华文宋体", "Noto Serif CJK SC";
     }
 
@@ -729,7 +730,7 @@ footer {
     }
 
     quote {
-        font-family: '仿宋';
+        font-family: '楷体';
     }
 
     body {

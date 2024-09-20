@@ -1020,3 +1020,13 @@ footer.ty-footer {
 .file-node-expanded>.file-node-children {
     display: grid;
   }
+
+.md-alert-text-note {
+    color: rgb(47, 129, 247);
+}
+.md-alert-text-important {
+    color: rgb(163, 113, 247);
+}
+.md-alert-text-warning {
+    color:  rgb(210, 153, 34);
+}

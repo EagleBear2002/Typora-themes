@@ -380,6 +380,10 @@ header, .context-menu, .megamenu-content, footer{
     background-color: var(--side-bar-bg-color);
 }
 
+.mac-os #write{
+    caret-color: AccentColor;
+}
+
 .md-lang {
     color: #b4654d;
 }
